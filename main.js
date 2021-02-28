@@ -2,7 +2,7 @@ window.onload = function() {
 	let body = document.body;
 	body.width = window.innerWidth;
 	body.height = window.innerHeight;
-	body.style.backgroundColor = "rgb(24, 24, 24)";
+	body.style.backgroundColor = "rgb(255, 255, 255)";
 
 	let createTextNode = function(parent, text) {
 		let textNode = document.createTextNode(text);
@@ -22,7 +22,7 @@ window.onload = function() {
 	div.style.transform = "translate(-50%, -50%)";
 
 	let options = MathJax.getMetricsFor(div, true);
-	let html = MathJax.tex2svg(`\\color{white}{\\boxed{
+	let html = MathJax.tex2svg(`\\color{black}{\\boxed{
 		\\oint\\limits_{\\partial R} \\vec{F}\\cdot\\mathrm{d}\\vec{s} = 
 		\\iint\\limits_{R} \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\mathrm{d}A
 	}}`, options)

@@ -36,7 +36,7 @@ div.header-title {
 	box-sizing: border-box;
 	text-align: center;
 	align-items: center;
-	font-weight: normal;
+	font-weight: bolder;
 	font-family: system-ui;
 	background-color: transparent;
 }
@@ -56,21 +56,87 @@ div.gradient-container {
 	width: inherit;
 	height: auto;
 	margin: 0.5vmax;
-	padding: 0.25vmax;
+	display: flex;
+	padding: 1vmax;
 	box-sizing: border-box;
 	border-radius: 1vmax;
 	background-image: linear-gradient(to right, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0));
 }
 
 div.topic-container {
-	width: inherit;
-	height: 10vmax;
-	margin: 1vmax;
+	float: left;
+	width: 100%;
+	height: auto;
+	cursor: pointer;
 	display: flex;
+	z-index: 1;
 	box-sizing: border-box;
+	transition: background 0.25s linear;
 	align-items: center;
 	border-radius: 0.5vmax;
 	vertical-align: middle;
+	flex-direction: column;
+	justify-content: center;
+	background-size: 200% 100%;
+	background-image: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0.1),
+		rgba(255, 255, 255, 0)
+	);
+	background-position: 100%;
+}
+
+div.topic-container:hover {
+	background-position: 0%;
+}
+
+div.topic-title {
+	color: rgb(235, 235, 235);
+	width: 100%;
+	height: auto;
+	padding: 1vmax 1vmax 0.25vmax 1vmax;
+	display: flex;
+	font-size: 1.75vmax;
+	box-sizing: border-box;
+	text-align: center;
+	font-weight: bold;
+	align-items: center;
+	font-family: system-ui;
+	vertical-align: middle;
 	justify-content: left;
-	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+}
+
+div.topic-date {
+	color: rgb(235, 235, 235);
+	width: 100%;
+	height: auto;
+	padding: 0.1vmax 1vmax 0.1vmax 1vmax;
+	display: flex;
+	font-size: 1vmax;
+	box-sizing: border-box;
+	text-align: center;
+	font-weight: lighter;
+	align-items: center;
+	font-family: system-ui;
+	vertical-align: middle;
+	justify-content: left;
+	text-decoration-line: underline;
+}
+
+div.topic-description {
+	color: rgb(235, 235, 235);
+	width: 100%;
+	height: auto;
+	padding: 0.1vmax 1vmax 1vmax 1vmax;
+	display: flex;
+	font-size: 1.2vmax;
+	box-sizing: border-box;
+	text-align: center;
+	font-style: italic;
+	font-weight: normal;
+	align-items: center;
+	font-family: system-ui;
+	vertical-align: middle;
+	justify-content: left;
 }

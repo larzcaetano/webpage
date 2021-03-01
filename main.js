@@ -10,6 +10,7 @@ window.onload = function() {
 		return true;
 	}
 
+	
 	let div = document.createElement("div");
 	div.style.width = "100%";
 	div.style.margin = "auto";
@@ -21,14 +22,23 @@ window.onload = function() {
 	div.style.left = "50%";
 	div.style.transform = "translate(-50%, -50%)";
 
-	let options = MathJax.getMetricsFor(div, true);
+	createTextNode(div, `\\begin{tikzpicture}
+		\\draw (0, 0) circle (1in);
+	\\end{tikzpicture}`);
+
+	body.appendChild(div);
+
+	/*let options = MathJax.getMetricsFor(div, true);
 	let html = MathJax.tex2svg(`\\color{black}{\\boxed{
 		\\oint\\limits_{\\partial R} \\vec{F}\\cdot\\mathrm{d}\\vec{s} = 
 		\\iint\\limits_{R} \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\mathrm{d}A
 	}}`, options)
+	html.style.width = "100%"
+	html.style.height = "auto";
+	html.style.overflow = "auto";
 	html.style.margin = "auto";
 	html.style.top = "50%"
 	html.style.transform = "translate(0%, -50%)";
 	div.appendChild(html);
-	body.appendChild(div);
+	body.appendChild(div);*/
 }

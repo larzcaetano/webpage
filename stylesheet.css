@@ -3,9 +3,10 @@ html {
 }
 
 body {
-	border: 1vmax solid rgb(8, 8, 8);
+	border: 0px;
 	margin: 0px;
-	padding: 0px;
+	padding: 5px;
+	overflow: hidden;
 	box-sizing: border-box;
 	box-shadow: inset 0px 0px 0px 0px rgb(8, 8, 8);
 	min-height: 100%;
@@ -15,6 +16,7 @@ body {
 div.header-container {
 	width: 100%;
 	height: 8vmax;
+	margin: 5px;
 	display: flex;
 	box-sizing: border-box;
 	align-items: center;
@@ -25,26 +27,35 @@ div.header-container {
 }
 
 div.header-title {
-	color: rgb(255, 255, 255);
-	width: 100%;
-	height: 100%;
+	color: rgb(235, 235, 235);
+	width: inherit;
+	height: inherit;
 	display: flex;
 	font-size: 3vmax;
 	box-sizing: border-box;
 	text-align: center;
 	align-items: center;
 	font-weight: bold;
-	font-family: monospace;
+	font-family: system-ui;
 	background-color: transparent;
 }
 
 div.inner-container {
-	width: 100%;
-	height: 100%;
-	padding: 2.5%;
+	width: inherit;
+	height: inherit;
+	margin: 5px;
 	display: flex;
 	box-sizing: border-box;
 	align-items: center;
 	vertical-align: middle;
 	justify-content: center;
+}
+
+div.gradient-container {
+	width: inherit;
+	height: 200px;
+	margin: 5px;
+	box-sizing: border-box;
+	border-radius: 1vmax;
+	background-image: linear-gradient(to right, rgba(24, 24, 24, 1), rgba(24, 24, 24, 0));
 }

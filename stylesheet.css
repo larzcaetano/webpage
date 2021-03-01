@@ -99,7 +99,7 @@ div.topic-title {
 	display: flex;
 	font-size: 1.75vmax;
 	box-sizing: border-box;
-	text-align: center;
+	text-align: left;
 	font-weight: bold;
 	align-items: center;
 	font-family: system-ui;
@@ -115,7 +115,7 @@ div.topic-date {
 	display: flex;
 	font-size: 1vmax;
 	box-sizing: border-box;
-	text-align: center;
+	text-align: left;
 	font-weight: lighter;
 	align-items: center;
 	font-family: system-ui;
@@ -132,7 +132,7 @@ div.topic-description {
 	display: flex;
 	font-size: 1.2vmax;
 	box-sizing: border-box;
-	text-align: center;
+	text-align: left;
 	font-style: italic;
 	font-weight: normal;
 	align-items: center;

@@ -6,7 +6,7 @@ body {
 	border: 0px;
 	margin: 0px;
 	padding: 0.5vmax;
-	overflow: hidden;
+	overflow: auto;
 	box-sizing: border-box;
 	box-shadow: inset 0px 0px 0px 0px rgb(8, 8, 8);
 	min-height: 100%;
@@ -14,16 +14,17 @@ body {
 }
 
 div.header-container {
-	width: 100%;
+	width: inherit;
 	height: 8vmax;
 	margin: 0.5vmax;
+	padding: 1vmax;
 	display: flex;
 	box-sizing: border-box;
 	align-items: center;
 	border-radius: 1vmax;
 	vertical-align: middle;
-	justify-content: center;
-	background-image: linear-gradient(to right, rgba(24, 24, 24, 1), rgba(24, 24, 24, 0));
+	justify-content: left;
+	background-image: linear-gradient(to right, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0));
 }
 
 div.header-title {
@@ -43,7 +44,7 @@ div.header-title {
 div.inner-container {
 	width: inherit;
 	height: inherit;
-	margin: 2vmax;
+	margin: 0.5vmax;
 	display: flex;
 	box-sizing: border-box;
 	align-items: center;
@@ -53,9 +54,23 @@ div.inner-container {
 
 div.gradient-container {
 	width: inherit;
-	height: 200px;
+	height: auto;
 	margin: 0.5vmax;
+	padding: 0.25vmax;
 	box-sizing: border-box;
 	border-radius: 1vmax;
-	background-image: linear-gradient(to right, rgba(24, 24, 24, 1), rgba(24, 24, 24, 0));
+	background-image: linear-gradient(to right, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0));
+}
+
+div.topic-container {
+	width: inherit;
+	height: 10vmax;
+	margin: 1vmax;
+	display: flex;
+	box-sizing: border-box;
+	align-items: center;
+	border-radius: 0.5vmax;
+	vertical-align: middle;
+	justify-content: left;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
 }

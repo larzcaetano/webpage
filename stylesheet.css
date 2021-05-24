@@ -156,3 +156,15 @@ div.topic-description {
 	vertical-align: middle;
 	justify-content: left;
 }
+
+div.text-box {
+	color: rgb(210, 210, 210);
+	width: 100%;
+	height: auto;
+	padding: 0.1vmax 1vmax 1vmax 1vmax;
+	font-size: 1.2vmax;
+	text-align: left;
+	font-weight: normal;
+	font-family: system-ui;
+	vertical-align: middle;
+}

@@ -1,182 +1,66 @@
-html {
-	height: 100%;
+@font-face {
+	src: url(Eczar-Regular.ttf);
+	font-weight: normal;
+	font-family: Eczar;
+}
+
+@font-face {
+	src: url(Eczar-Medium.ttf);
+	font-weight: 500;
+	font-family: Eczar;
+}
+
+@font-face {
+	src: url(Eczar-Bold.ttf);
+	font-weight: bold;
+	font-family: Eczar;
+}
+
+:root {
+	--red: rgb(255, 60, 80);
+	--blue: rgb(60, 120, 180);
+	--black: rgb(32, 32, 32);
+	--white: rgb(255, 255, 255);
+}
+
+a {
+	color: var(--white);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--red);
+	text-decoration: none;
+}
+
+h1 {
+	font-size: 48pt;
+	font-weight: 400;
+	line-height: 1.2;
+	font-family: Eczar;
+	font-weight: 500;
+	margin-bottom: 0;
 }
 
 body {
-	border: 0px;
-	margin: 0px;
-	padding: 0.5vmax;
-	overflow: auto;
-	box-sizing: border-box;
-	box-shadow: inset 0px 0px 0px 0px rgb(8, 8, 8);
-	min-height: 100%;
-	background-color: rgb(10, 10, 10);
-}
-
-div.header-container {
-	width: inherit;
-	height: 8vmax;
-	margin: 0.5vmax;
-	padding: 1vmax;
-	display: flex;
-	box-sizing: border-box;
-	align-items: center;
-	border-radius: 1vmax;
-	vertical-align: middle;
-	justify-content: left;
-	background-image: linear-gradient(to right, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0));
-}
-
-div.header-title {
-	color: rgb(210, 210, 210);
-	width: inherit;
-	height: inherit;
-	display: flex;
-	font-size: 3vmax;
-	box-sizing: border-box;
-	text-align: center;
-	align-items: center;
-	font-weight: bolder;
+	color: var(--white);
+	margin: 1em auto;
+	padding: 0 0.5em;
+	max-width: 36em;
+	font-size: 16pt;
+	line-height: 1.2;
+	background: var(--black);
 	font-family: system-ui;
-	background-color: transparent;
 }
 
-div.header-center-title {
-	color: rgb(210, 210, 210);
-	width: 100%;
-	height: 100%;
-	display: flex;
-	font-size: 3vmax;
-	text-align: center;
-	align-items: center;
-	font-weight: bolder;
+body > header {
 	font-family: system-ui;
-	flex-direction: row;
-	justify-content: center;
-	background-color: transparent;
+	margin-bottom: 1em;
 }
 
-div.inner-container {
-	width: inherit;
-	height: inherit;
-	margin: 0.5vmax;
-	display: flex;
-	box-sizing: border-box;
-	align-items: center;
-	vertical-align: middle;
-	justify-content: center;
-}
-
-div.gradient-container {
-	gap: 1vmax;
-	width: inherit;
-	height: auto;
-	margin: 0.5vmax;
-	display: flex;
-	padding: 1vmax;
-	box-sizing: border-box;
-	border-radius: 1vmax;
-	flex-direction: column;
-	background-image: linear-gradient(to right, rgba(24, 24, 24, 0.5), rgba(24, 24, 24, 0));
-}
-
-div.topic-container {
-	float: left;
-	width: 100%;
-	height: auto;
-	cursor: pointer;
-	display: flex;
-	z-index: 1;
-	box-sizing: border-box;
-	transition: background 0.25s linear;
-	align-items: center;
-	border-radius: 0.5vmax;
-	vertical-align: middle;
-	flex-direction: column;
-	justify-content: center;
-	background-size: 200% 100%;
-	background-image: linear-gradient(
-		to right,
-		rgba(210, 210, 210, 0.1),
-		rgba(210, 210, 210, 0.1),
-		rgba(210, 210, 210, 0)
-	);
-	background-position: 100%;
-}
-
-div.topic-container:hover {
-	background-position: 0%;
-}
-
-div.topic-title {
-	color: rgb(210, 210, 210);
-	width: 100%;
-	height: auto;
-	padding: 1vmax 1vmax 0.25vmax 1vmax;
-	display: flex;
-	font-size: 1.75vmax;
-	box-sizing: border-box;
-	text-align: left;
-	font-weight: bold;
-	align-items: center;
-	font-family: system-ui;
-	vertical-align: middle;
-	justify-content: left;
-}
-
-div.topic-date {
-	color: rgb(210, 210, 210);
-	width: 100%;
-	height: auto;
-	padding: 0.1vmax 1vmax 0.1vmax 1vmax;
-	display: flex;
-	font-size: 1vmax;
-	box-sizing: border-box;
-	text-align: left;
-	font-weight: lighter;
-	align-items: center;
-	font-family: system-ui;
-	vertical-align: middle;
-	justify-content: left;
-	text-decoration-line: underline;
-}
-
-div.topic-description {
-	color: rgb(210, 210, 210);
-	width: 100%;
-	height: auto;
-	padding: 0.1vmax 1vmax 1vmax 1vmax;
-	display: flex;
-	font-size: 1.2vmax;
-	box-sizing: border-box;
-	text-align: left;
-	font-weight: normal;
-	align-items: center;
-	font-family: system-ui;
-	vertical-align: middle;
-	justify-content: left;
-}
-
-div.text-box {
-	color: rgb(210, 210, 210);
-	width: 100%;
-	height: auto;
-	padding: 0.1vmax 1vmax 1vmax 1vmax;
-	font-size: 1.2vmax;
-	text-align: left;
-	font-weight: normal;
-	font-family: system-ui;
-	vertical-align: middle;
-}
-
-div.text-box-a {
-	color: rgb(210, 210, 210);
-	width: 100%;
-	height: auto;
-	padding: 0.1vmax 1vmax 1vmax 1vmax;
-	font-size: 6vmax;
-	text-align: left;
-	font-weight: normal;
-	font-family: system-ui;
-	vertical-align: middle;
+body > header > h1 {
+	margin: 0;
+	padding: 0 0 0.1em 0;
+	line-height: 1;
+	border-bottom: 5px dashed var(--white);
 }

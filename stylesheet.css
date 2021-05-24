@@ -68,12 +68,12 @@ div.inner-container {
 }
 
 div.gradient-container {
+	gap: 1vmax;
 	width: inherit;
 	height: auto;
 	margin: 0.5vmax;
 	display: flex;
 	padding: 1vmax;
-	row-gap: 2vmax;
 	box-sizing: border-box;
 	border-radius: 1vmax;
 	flex-direction: column;

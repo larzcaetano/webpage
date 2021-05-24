@@ -168,3 +168,15 @@ div.text-box {
 	font-family: system-ui;
 	vertical-align: middle;
 }
+
+div.text-box-a {
+	color: rgb(210, 210, 210);
+	width: 100%;
+	height: auto;
+	padding: 0.1vmax 1vmax 1vmax 1vmax;
+	font-size: 6vmax;
+	text-align: left;
+	font-weight: normal;
+	font-family: system-ui;
+	vertical-align: middle;
+}

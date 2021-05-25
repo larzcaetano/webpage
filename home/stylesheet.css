@@ -1,17 +1,17 @@
 @font-face {
-	src: url(Eczar-Regular.ttf);
+	src: url(../fonts/Eczar-Regular.ttf);
 	font-weight: normal;
 	font-family: Eczar;
 }
 
 @font-face {
-	src: url(Eczar-Medium.ttf);
+	src: url(../fonts/Eczar-Medium.ttf);
 	font-weight: 500;
 	font-family: Eczar;
 }
 
 @font-face {
-	src: url(Eczar-Bold.ttf);
+	src: url(../fonts/Eczar-Bold.ttf);
 	font-weight: bold;
 	font-family: Eczar;
 }

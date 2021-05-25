@@ -23,6 +23,7 @@
 					displayMath: [["$$", "$$"]],
 				},
 				svg: {
+					scale: 1.3,
 					fontCache: "local",
 					displayAlign: "center",
 				},
@@ -34,6 +35,8 @@
 			};
 		</script>
 		<script id="Mathjax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.1/es5/tex-svg.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
+		<script src="https://tikzjax.com/v1/tikzjax.js"></script>
 		<link rel="stylesheet" type="text/css" href="../../stylesheet.css">
 	</head>
 	<body>
@@ -44,6 +47,17 @@
 		</header>
 		<article>
 			<h2>Dot Product</h2>
+			<script type="text/tikz">
+				\begin{tikzpicture}
+					\definecolor{larzblue}{RGB}{60, 120, 180}
+					\draw[line width = 8pt, larzblue] (0, 0) circle (1in);
+				\end{tikzpicture}
+			</script>
+			<p>
+				$$\begin{align*}
+					\mathrm{\vec{R}} & = \mathrm{\vec{0}}
+				\end{align*}$$
+			</p>
 		</article>
 	</body>
 </html>

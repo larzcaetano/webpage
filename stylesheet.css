@@ -101,8 +101,8 @@ body {
 	color: var(--white);
 	margin: 1em auto;
 	padding: 0 0.5em;
-	max-width: 48em;
-	font-size: 12pt;
+	max-width: 36em;
+	font-size: 16pt;
 	line-height: 1.2;
 	background: var(--black);
 	font-family: CrimsonPro;

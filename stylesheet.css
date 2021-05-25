@@ -97,6 +97,13 @@ ul.postlist > li::before {
 	justify-content: start;
 }
 
+div.svg-container {
+	display: flex;
+	margin-top: 0.5em;
+	padding-bottom: 0.5em;
+	justify-content: center;
+}
+
 body {
 	color: var(--white);
 	margin: 1em auto;

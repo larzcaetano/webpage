@@ -1,19 +1,37 @@
 @font-face {
-	src: url(Eczar-Regular.ttf);
+	src: url(fonts/Eczar-Regular.ttf);
 	font-weight: normal;
 	font-family: Eczar;
 }
 
 @font-face {
-	src: url(Eczar-Medium.ttf);
+	src: url(fonts/Eczar-Medium.ttf);
 	font-weight: 500;
 	font-family: Eczar;
 }
 
 @font-face {
-	src: url(Eczar-Bold.ttf);
+	src: url(fonts/Eczar-Bold.ttf);
 	font-weight: bold;
 	font-family: Eczar;
+}
+
+@font-face {
+	src: url(fonts/CrimsonPro-Regular.ttf);
+	font-weight: normal;
+	font-family: CrimsonPro;
+}
+
+@font-face {
+	src: url(fonts/CrimsonPro-Medium.ttf);
+	font-weight: 500;
+	font-family: CrimsonPro;
+}
+
+@font-face {
+	src: url(fonts/CrimsonPro-Bold.ttf);
+	font-weight: bold;
+	font-family: CrimsonPro;
 }
 
 :root {
@@ -33,28 +51,65 @@ a:hover {
 	text-decoration: none;
 }
 
+p {
+	margin: 0;
+	hyphens: auto;
+	text-align: justify;
+}
+
 h1 {
-	font-size: 48pt;
-	font-weight: 400;
+	font-size: 56pt;
 	line-height: 1.2;
 	font-family: Eczar;
-	font-weight: 500;
+	font-weight: bold;
 	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 32pt;
+	margin-top: 0.5em;
+	font-weight: 500;
+	font-family: Eczar;
+	margin-bottom: 0;
+}
+
+h2 a {
+	text-decoration: none;
+}
+
+ul.postlist {
+	padding: 0;
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+
+ul.postlist > li {
+	padding-left: 1em;
+}
+
+ul.postlist > li::before {
+	width: 1em;
+	height: 1em;
+	display: inline-flex;
+	margin-left: -1em;
+	align-items: center;
+	justify-content: start;
 }
 
 body {
 	color: var(--white);
 	margin: 1em auto;
 	padding: 0 0.5em;
-	max-width: 36em;
-	font-size: 16pt;
+	max-width: 48em;
+	font-size: 12pt;
 	line-height: 1.2;
 	background: var(--black);
-	font-family: system-ui;
+	font-family: CrimsonPro;
 }
 
 body > header {
-	font-family: system-ui;
+	font-family: Eczar;
 	margin-bottom: 1em;
 }
 
@@ -62,5 +117,14 @@ body > header > h1 {
 	margin: 0;
 	padding: 0 0 0.1em 0;
 	line-height: 1;
-	border-bottom: 5px dashed var(--white);
+	border-bottom: 5px dashed var(--blue);
+}
+
+article {
+	display: block;
+}
+
+article > p {
+	font-size: 16pt;
+	font-family: CrimsonPro;
 }

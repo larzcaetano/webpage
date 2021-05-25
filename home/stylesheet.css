@@ -16,6 +16,24 @@
 	font-family: Eczar;
 }
 
+@font-face {
+	src: url(../fonts/CrimsonPro-Regular.ttf);
+	font-weight: normal;
+	font-family: CrimsonPro;
+}
+
+@font-face {
+	src: url(../fonts/CrimsonPro-Medium.ttf);
+	font-weight: 500;
+	font-family: CrimsonPro;
+}
+
+@font-face {
+	src: url(../fonts/CrimsonPro-Bold.ttf);
+	font-weight: bold;
+	font-family: CrimsonPro;
+}
+
 :root {
 	--red: rgb(255, 60, 80);
 	--blue: rgb(60, 120, 180);
@@ -33,12 +51,24 @@ a:hover {
 	text-decoration: none;
 }
 
+p {
+	margin: 0;
+	hyphens: auto;
+	text-align: justify;
+}
+
 h1 {
 	font-size: 48pt;
-	font-weight: 400;
 	line-height: 1.2;
 	font-family: Eczar;
 	font-weight: 500;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-size: 36pt;
+	font-weight: 500;
+	font-family: Eczar;
 	margin-bottom: 0;
 }
 
@@ -63,4 +93,13 @@ body > header > h1 {
 	padding: 0 0 0.1em 0;
 	line-height: 1;
 	border-bottom: 5px dashed var(--white);
+}
+
+article {
+	display: block;
+}
+
+article > p {
+	font-size: 16pt;
+	font-family: CrimsonPro;
 }

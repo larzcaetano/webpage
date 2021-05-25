@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^$ /home [L]
+RewriteRule .* /home/index.html [L]

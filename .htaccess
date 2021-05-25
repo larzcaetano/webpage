@@ -1,5 +1,2 @@
 RewriteEngine On
-RewriteRule ^ home/index.html [NC,L]
-
-RewriteEngine On
-RewriteRule ^/?$ home/index.html [NC,L]
+RewriteRule ^/?home/?$ home/index.html [L]

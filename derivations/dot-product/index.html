@@ -23,7 +23,7 @@
 					displayMath: [["$$", "$$"]],
 				},
 				svg: {
-					scale: 1.3,
+					scale: 1,
 					fontCache: "local",
 					displayAlign: "center",
 				},
@@ -47,7 +47,19 @@
 		</header>
 		<article>
 			<h2>Dot Product</h2>
+			<p>The dot product, denoted as $\mathrm{\vec{a}\cdot\vec{b}}$, is widely used in linear algebra in a bunch of different ways. </p>
 			<svg class="image" width="50%" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
+				<defs>
+					<marker id="arrowhead" markerWidth="5" markerHeight="3" refX="0" refY="1.5" orient="auto">
+						<polygon points="0 0, 5 1.5, 0 3" fill="white"/>
+					</marker>
+				</defs>
+				<line x1="10" y1="25" x2="70" y2="80" stroke="white" stroke-width="1" stroke-linecap="round" marker-end="url(#arrowhead)"/>
+				<foreignObject x="70" y="70" width="50" height="50">
+					<div style="font-size: 8pt;">$\mathrm{\vec{a}}$</div>
+				</foreignObject>
+			</svg>
+			<!--<svg class="image" width="50%" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
 				<rect x="0%" y="0%" width="100%" height="100%" fill="red"/>
 				<circle cx="50%" cy="50%" r="25%" stroke="yellow" stroke-width="5" fill="green"/>
 			</svg>
@@ -62,7 +74,7 @@
 			<svg class="image" width="50%" viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet">
 				<rect x="0%" y="0%" width="100%" height="100%" fill="magenta"/>
 				<circle cx="50%" cy="50%" r="25%" stroke="blue" stroke-width="5" fill="yellow"/>
-			</svg>
+			</svg>-->
 		</article>
 	</body>
 </html>

@@ -129,8 +129,10 @@ body > header > h1 {
 
 object.image {
 	display: block;
+	margin-top: 1em;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 1em;
 }
 
 article {

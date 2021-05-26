@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteRule ^/?home/?$ home/index.html [L]
+RewriteRule ^/home/?$ home/index.html [L]
 
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteCond %{REQUEST_FILENAME}/index\.html -f

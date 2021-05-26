@@ -127,6 +127,12 @@ body > header > h1 {
 	border-bottom: 5px dashed var(--blue);
 }
 
+object.image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 article {
 	display: block;
 }

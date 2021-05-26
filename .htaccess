@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteRule %{HTTP:Accept-Language} ^pt [NC]
+RewriteCond %{HTTP:Accept-Language} ^pt [NC]
 RewriteRule ^$ pt-br/home/index.html [R=301,L]
 
 RewriteRule ^$ en-us/home/index.html [R=301,L]
